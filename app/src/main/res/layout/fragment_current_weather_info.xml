@@ -1,0 +1,69 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E3E0E4">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mostly Cloudy"
+        android:gravity="center"
+        android:textColor="#142A4C"
+        android:textSize="20dp"
+        android:id="@+id/head"
+        app:layout_constraintBottom_toTopOf="@+id/cld"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/cld"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:src="@drawable/baseline_cloud_24"
+        app:layout_constraintTop_toBottomOf="@id/head" />
+
+    <TextView
+        android:id="@+id/txt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="48dp"
+        android:elevation="10dp"
+        android:text="Mon June 17| 10:00 AM"
+        android:textColor="#142A4C"
+        android:textSize="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/cld"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+    <TextView
+        android:id="@+id/txt3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="48dp"
+        android:elevation="10dp"
+        android:text="25'"
+        android:textColor="#142A4C"
+        android:textSize="40sp"
+        app:layout_constraintTop_toBottomOf="@+id/txt2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+    <TextView
+        android:id="@+id/txt4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="48dp"
+        android:elevation="10dp"
+        android:text="H 27  L 16"
+        android:textColor="#142A4C"
+        android:textSize="15sp"
+        app:layout_constraintTop_toBottomOf="@+id/txt3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
